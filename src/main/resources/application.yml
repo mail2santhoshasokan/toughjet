@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  security:
+    user:
+      name: "sa"
+      password: "sa"
+  datasource:
+    url: "jdbc:sqlserver://localhost:1433;encrypt=false;databaseName=toughjet;"
+    username: "sa"
+    password: "Mercedes@e53"
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: false
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2008Dialect
